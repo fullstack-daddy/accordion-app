@@ -5,7 +5,7 @@ import { Plus, Minus } from 'lucide-react';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-  const [openItems, setOpenItems] = useState(new Set()); // No items open by default
+  const [openItems, setOpenItems] = useState(new Set());
 
   const accordionData = [
     {
@@ -30,7 +30,7 @@ export default function Home() {
     }
   ];
 
-  const toggleItem = (index:any) => {
+  const toggleItem = (index:number) => {
     const newOpenItems = new Set(openItems);
     if (newOpenItems.has(index)) {
       newOpenItems.delete(index);
