@@ -49,7 +49,7 @@ export default function Home() {
       darkMode ? 'bg-gray-900' : 'bg-white'
     }`}>
       {/* Dark Mode Toggle */}
-      <div className="fixed md:top-[3rem] md:right-18 right-4 top-12 z-10">
+      <div className="fixed md:top-[3rem] md:right-18 right-4 top-4 z-10">
         <button
           onClick={toggleDarkMode}
           className={`md:px-3 md:py-2 p-1 rounded-lg text-sm font-medium transition-colors duration-200 ${
