@@ -49,10 +49,10 @@ export default function Home() {
       darkMode ? 'bg-gray-900' : 'bg-white'
     }`}>
       {/* Dark Mode Toggle */}
-      <div className="fixed top-18 right-18 z-10">
+      <div className="fixed md:top-[3rem] md:right-18 right-4 top-12 z-10">
         <button
           onClick={toggleDarkMode}
-          className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${
+          className={`md:px-3 md:py-2 p-1 rounded-lg text-sm font-medium transition-colors duration-200 ${
             darkMode 
               ? 'bg-gray-700 text-white hover:bg-gray-600' 
               : 'bg-gray-200 text-gray-900 hover:bg-gray-300'
@@ -66,7 +66,7 @@ export default function Home() {
       <div className="px-6 py-12 md:px-12 lg:px-24">
         {/* Title */}
         <div className="text-center mb-16">
-          <h1 className={`text-2xl md:text-3xl lg:text-[44px] font-bold leading-tight pt-10 ${
+          <h1 className={`text-2xl md:text-3xl lg:text-[44px] font-bold leading-tight md:pt-10 ${
             darkMode ? 'text-cyan-500' : 'text-purple-700'
           }`}>
             Frequently asked questions
